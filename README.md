@@ -10,4 +10,4 @@ MHSwitch is a simple and clean switch-control without gloss. The colors/borders 
 Installation
 ------------
 
-Add the QuartzCore framework and import "MHSwitch.h". 
+Add the MHSwitch.* and the QuartzCore framework to your project.
