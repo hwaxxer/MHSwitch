@@ -40,6 +40,14 @@
 	return self;
 }
 
+- (void)setFont:(UIFont *)font
+{
+    if (_font != font) {
+        _font = font;
+        [self setNeedsDisplay];
+    }
+}
+
 - (void)drawInContext:(CGContextRef)context
 {
 
@@ -421,5 +429,14 @@
     return self.toggleLayer.offColor;
 }
 
+- (void)setFont:(UIFont *)font
+{
+    self.toggleLayer.font = font;
+}
+
+- (UIFont *)font
+{
+    return self.toggleLayer.font;
+}
 
 @end
