@@ -8,6 +8,7 @@
 @interface MHSwitch : UIControl
 
 @property (nonatomic, getter = isOn) BOOL on;
+- (void)setOn:(BOOL)newOn animated:(BOOL)animated;
 
 @property (nonatomic, strong) UIFont *font;
 
@@ -19,8 +20,6 @@
 @property (nonatomic, readonly, strong) CALayer *borderLayer;
 
 @property (nonatomic) CGFloat cornerRadius;
-
-- (void)setOn:(BOOL)newOn animated:(BOOL)animated;
 
 @end
 
